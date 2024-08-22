@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url('https://img.freepik.com/vetores-premium/borda-matematica-em-fundo-preto-com-numeros-e-objetos-matematicos_1639-52092.jpg');
+    background-image: url('../img/fundo3.jpg');
     height: 100vh; /* Alterado para cobrir toda a altura da tela */
     background-size: cover;
     background-repeat: no-repeat;
