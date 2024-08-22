@@ -1,0 +1,175 @@
+@import url('./animations.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+body {
+    background-image: url('/img/fundo3.jpg');
+    height: 100vh; /* Alterado para cobrir toda a altura da tela */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Alterado para centralizar a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Adicionado para centralizar verticalmente */
+}
+
+.container {
+    background-color: #eec791;
+    padding: 10px 30px 15px 30px;
+    width: 90%; /* Alterado para se ajustar melhor em telas pequenas */
+    max-width: 600px; /* Adicionado para limitar a largura em telas grandes */
+    text-align: center;
+    margin: 5px 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid #c286da;
+}
+
+.correto {
+    color: green;
+}
+
+.incorreto {
+    color: red;
+}
+
+#contador {
+    font-weight: bold;
+    margin: 5px;
+    font-size: large;
+}
+
+.btn-verificar,
+.btn-resetar {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.btn-resetar {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-resetar:hover {
+    scale: 1.1;
+    color: white;
+    background-color: #e7574d;
+}
+
+.btn-verificar {
+    background-color: #4CAF50;
+    margin-right: 20px;
+}
+
+.btn-verificar:hover {
+    background-color: #58c05b;
+    scale: 1.1;
+}
+
+#nome {
+    text-align: center;
+    margin-bottom: 5px;
+    width: 70%; 
+    font-size: 17px;
+}
+
+#titulo1,
+#titulo2 {
+    margin-top: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#multiplicador {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 70%; 
+    font-size: 17px;
+}
+
+#tabuada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: large;
+    width: 100%;
+    font-weight: bold;
+}
+
+#resultado {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%; 
+    max-width: 600px; /* Adicionado para limitar a largura em telas grandes */
+    height: 30px;
+    font-weight: bold;
+    margin: 15px;
+    color: #0f6b12;
+    animation: pulse 1s ease-in-out infinite alternate;
+    font-size: 16px;
+}
+
+#interativa {
+    font-size: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #nome, #multiplicador {
+        font-size: 16px;
+    }
+
+    .btn-verificar,
+    .btn-resetar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #interativa {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    #nome, #multiplicador {
+        font-size: 14px;
+    }
+
+    .btn-verificar,
+    .btn-resetar {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    #interativa {
+        font-size: 20px;
+    }
+}

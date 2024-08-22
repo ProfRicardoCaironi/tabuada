@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuada Interativa</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="interativa">Tabuada Interativa</h1>
+
+    <label id="titulo1" for="nome">Nome do aluno:</label>
+    <input type="text" id="nome" name="nome" aria-label="Nome">
+
+    <label id="titulo2" for="multiplicador">Multiplicador:</label>
+    <input type="number" id="multiplicador" name="multiplicador" value="10" aria-label="Multiplicador">
+
+
+    <div id="tabuada"></div>
+
+    <p id="resultado"></p>
+    <p id="contador">Total de acertos: 0</p>
+
+    <div id="botoes">
+      <button id="verificar" class="btn-verificar">Verificar Respostas</button>
+      <button id="resetar" class="btn-resetar">Resetar</button>
+    </div>
+
+
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
