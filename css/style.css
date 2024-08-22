@@ -117,14 +117,14 @@ body {
 #resultado {
     display: flex;
     flex-wrap: wrap;
-    width: 70%; 
+    width: 80%; 
     max-width: 600px; /* Adicionado para limitar a largura em telas grandes */
     height: 30px;
     font-weight: bold;
     margin: 15px;
     color: #0f6b12;
     animation: pulse 1s ease-in-out infinite alternate;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #interativa {
